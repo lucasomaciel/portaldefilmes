@@ -1,0 +1,190 @@
+html {
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    
+}
+
+.form-control-borderless {
+    border: none;
+}
+
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.header{
+    color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: rgb(207, 207, 207);
+}
+
+.footer {
+    padding: 15px;
+    background-color: rgb(207, 207, 207);
+    text-align: center;
+
+}
+
+.footer img {
+    display: inline;
+    margin: 10px;
+}
+
+.logo{ 
+    max-width: 80px;
+}
+
+.menu1{
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    margin-left: -320px;
+}
+
+.menu1 a{ 
+    color: rgb(0, 0, 0);
+}
+
+.busca button {
+    background-color:rgb(73, 66, 66);
+}
+
+.busca {
+    display: inline;
+}
+
+.titulos {
+    text-align: center;
+    font-size: xx-large;
+    padding: 20px;
+    margin: 20px;
+}
+
+section > div > .titulos {
+    text-align: center;
+    font-size: xx-large;
+    padding: 20px;
+    margin: 20px;
+}
+
+h9 .titulos {
+    text-align: center;
+    font-size: xx-large;
+    padding: 20px;
+    margin: 20px;
+}
+
+.espaco {
+    margin: 15px;
+}
+
+.emdestaque img {
+    width: 100%;
+    padding: 20px;
+    margin: 20px;
+}
+
+.avaliacoes div {
+    text-align: justify;
+}
+
+main {
+    padding: 5px;
+    margin: 5px;
+}
+
+.lancamentos {
+    text-align: justify;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: var(--main-gray);
+}
+
+
+
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.contact-details {
+  font-size: 2.4rem;
+  transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover {
+  transform: translateY(8px);
+}
+
+
+ul {
+    text-align: center;
+}
+ul li {
+    display: inline;
+    margin: 15px;
+}
+
+@media (max-width: 768px) {
+    .entrevistas > div {
+        display: none;
+    }
+    iframe {
+        margin: 5px;
+        padding: 5px;
+    }
+}
+
+#menuToggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .header nav {
+        display: none;
+    }
+
+
+}
+
+.emdestaque, .entrevistas {
+    background-color: rgb(207, 207, 207);
+    margin-top: 10px;
+}
+
+.sobre-editorial p {
+    text-align: justify;
+    margin: 10px;
+    padding: 10px;
+}
+
+.novidades div a {
+    color: rgb(0, 0, 0);
+}
+
+.novidades div p {
+    text-align: justify;
+}
+
+.card a {
+    background-color:rgb(73, 66, 66);
+}

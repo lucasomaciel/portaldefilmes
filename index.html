@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Filmes HD</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body onload="carregaFilmes()">
+
+    <header class="header">
+        <img src="imags/img1.png" class="logo">
+
+        <nav class="menu1">
+            <div class="container_nav">
+                <input type="checkbox" id="menuToggle">
+                <label for="menuToggle" class="menu-icon">
+                    <i class="fa fa-bars"></i>
+                    <i class="fa fa-times-circle"></i>
+                </label>
+                <ul id="menu">
+                    <li><a href="#">lançamentos</a></li>
+                    <li><a href="#">em destaque</a></li>
+                    <li><a href="#">avaliações</a></li>
+                    <li><a href="#">entrevistas e making of</a></li>
+                    <li><a href="#">novidades</a></li>
+                </ul>
+        </nav>
+        </div>
+    </header>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+    <div class="col-12 espaco"></div>
+
+    <div class="container busca">
+        <br>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8">
+                <form class="card card-sm">
+                    <div class="card-body row no-gutters align-items-center">
+                        <div class="col-auto">
+                            <i class="fas fa-search h4 text-body"></i>
+                        </div>
+
+                        <div class="col">
+                            <input class="form-control form-control-lg form-control-borderless" type="search"
+                                placeholder="Busque filmes">
+                        </div>
+
+                        <div class="col-auto">
+                            <button class="btn btn-lg btn-success" type="submit" onclick="pesquisaFilmes()">Pesquisar</button>
+                            <button class="btn btn-lg btn-success" onclick="carregaFilmes()">Ver Mais Filmes</button> 
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+    <main>
+        <section class="row lancamentos">
+            <h5 id="lancamentos" class="col-12 titulos">Lançamentos</h5>
+
+            <div class="container-fluid">
+                <div class="row" id="tela">
+                    <div class="card col-md-4">
+                        <img src="https://source.unsplash.com/random/200x300" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card col-md-4">
+                        <img src="https://source.unsplash.com/random/200x300" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card col-md-4">
+                        <img src="https://source.unsplash.com/random/200x300" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 espaco"></div>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/cLxnDwBr-XM"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen class="col-12 col-md-6 films"></iframe>
+
+            <div class="col-12 col-md-6 description">
+                <p><b>Chronical: 2067</b></p>
+                <p>Sinopse: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur vel, veritatis
+                    pariatur
+                    iusto aperiam error nulla. Minus odio illo facere. Lorem, ipsum dolor sit amet consectetur
+                    adipisicing
+                    elit. Quibusdam impedit repellat, aliquid ipsam velit dolore animi officia odio maiores veniam
+                    explicabo
+                    architecto. Eius ipsum qui fugit est quos cupiditate totam blanditiis laudantium accusamus ipsa
+                    natus
+                    suscipit, amet eligendi rem perspiciatis inventore veritatis atque praesentium quod sequi
+                    laboriosam
+                    aut
+                    illo quasi.</p>
+                <p>Diretor e roteirista: Xxxxx Xxxxx e Xxxxx Xxxxxx.</br>Atores principais: Xxxxx Xxxx e
+                    Xxxxxxxx Xxxxxx.</p>
+                <p>Avaliação: 4.2/5.0 (Fonte: Algum Lugar)</p>
+            </div>
+
+            <div class="col-12 espaco"></div>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/WrxVHcXt3XY"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen class="col-12 col-md-6"></iframe>
+            <div class="col-12 col-md-6 description">
+                <p><b>Assalto ao Banco da Espanha</b></p>
+                <p>Sinopse: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur vel, veritatis
+                    pariatur
+                    iusto aperiam error nulla. Minus odio illo facere. Lorem, ipsum dolor sit amet consectetur
+                    adipisicing
+                    elit. Quibusdam impedit repellat, aliquid ipsam velit dolore animi officia odio maiores veniam
+                    explicabo
+                    architecto. Eius ipsum qui fugit est quos cupiditate totam blanditiis laudantium accusamus ipsa
+                    natus
+                    suscipit, amet eligendi rem perspiciatis inventore veritatis atque praesentium quod sequi
+                    laboriosam
+                    aut
+                    illo quasi.</p>
+                <p>Diretor e roteirista: Xxxxx Xxxxx e Xxxxx Xxxxxx.</br>Atores principais: Xxxxx Xxxx e
+                    Xxxxxxxx Xxxxxx.</p>
+                <p>Avaliação: 4.2/5.0 (Fonte: Algum Lugar)</p>
+            </div>
+
+            <div class="col-12 espaco"></div>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/l3mQC57peq4"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen class="col-12 col-md-6"></iframe>
+            <div class="col-12 col-md-6 description">
+                <p><b>Viagem Aterrorizante</b></p>
+                <p>Sinopse: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur vel, veritatis
+                    pariatur
+                    iusto aperiam error nulla. Minus odio illo facere. Lorem, ipsum dolor sit amet consectetur
+                    adipisicing
+                    elit. Quibusdam impedit repellat, aliquid ipsam velit dolore animi officia odio maiores veniam
+                    explicabo
+                    architecto. Eius ipsum qui fugit est quos cupiditate totam blanditiis laudantium accusamus ipsa
+                    natus
+                    suscipit, amet eligendi rem perspiciatis inventore veritatis atque praesentium quod sequi
+                    laboriosam
+                    aut
+                    illo quasi.</p>
+                <p>Diretor e roteirista: Xxxxx Xxxxx e Xxxxx Xxxxxx.</br>Atores principais: Xxxxx Xxxx e
+                    Xxxxxxxx Xxxxxx.</p>
+                <p>Avaliação: 4.2/5.0 (Fonte: Algum Lugar)</p>
+            </div>
+
+        </section>
+    
+        <section class="row emdestaque">
+            <h5 class="col-12 titulos">Em Destaque</h5>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                <a href="#"><img src="imags/filme1.jpg" alt="Filme 1"></a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                <a href="#"><img src="imags/filme2.jpg" alt="Filme 2"></a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                <a href="#"><img src="imags/filme3.jpg" alt="Filme 3"></a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                <a href="#"><img src="imags/filme4.jpg" alt="Filme 4"></a>
+            </div>
+        </section>
+        <section class="row avaliacoes">
+            <h5 class="col-12 titulos">Avaliações</h5>
+            <div class="col-12 col-md-4">
+                <h7><b>Nome do Avaliador</b></h7>
+                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis unde perspiciatis assumenda
+                    quaerat quibusdam sint exercitationem eveniet provident sequi quisquam. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit."</p>
+                <p>4.2/5.0</br>23/03/2021</p>
+            </div>
+            <div class="col-12 col-md-4">
+                <h7><b>Nome do Avaliador</b></h7>
+                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis unde perspiciatis assumenda
+                    quaerat quibusdam sint exercitationem eveniet provident sequi quisquam. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit."</p>
+                <p>4.2/5.0</br>23/03/2021</p>
+            </div>
+            <div class="col-12 col-md-4">
+                <h7><b>Nome do Avaliador</b></h7>
+                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis unde perspiciatis assumenda
+                    quaerat quibusdam sint exercitationem eveniet provident sequi quisquam. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit."</p>
+                <p>4.2/5.0</br>23/03/2021</p>
+            </div>
+        </section>
+        <section class="row entrevistas">
+            <h5 class="col-12 titulos">Entrevistas e Making Of</h5>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ciu5yQYwJgY"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen class="col-12 col-md-4"></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/c0g06GWs8D8"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen class="col-12 col-md-4"></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/e1O7DLuG5P4"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen class="col-12 col-md-4"></iframe>
+
+            <div class="col-12 espaco"></div>
+
+            <div class="col-4">
+                <h7><b>Filme:</b> Avengers: Age Of Ultron</h7>
+                <p><b>Diretor:</b> Xxxxx Xxxxx</p>
+                <p><b>Ano de estréia:</b> 2021</p>
+            </div>
+            <div class="col-4">
+                <h7><b>Filme:</b> Gladiator</h7>
+                <p><b>Diretor:</b> Xxxxx Xxxxx</p>
+                <p><b>Ano de estréia:</b> 2021</p>
+            </div>
+            <div class="col-4">
+                <h7><b>Filme:</b> O Auto Da Compadecida</h7>
+                <p><b>Diretor:</b> Xxxxx Xxxxx</p>
+                <p><b>Ano de estréia:</b> 2021</p>
+            </div>
+        </section>
+        <section class="row novidades">
+            <h5 class="col-12 titulos">Novidades</h5>
+            <div class="col-12 col-md-4">
+                <h7><a href="#"><b>Lorem, ipsum dolor sit amet consectetur adipisicing elit?</b></a></h7>
+                <br>
+                <h10><em>Artigo por: Xxxxx Xxxxx</em></h10>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam impedit dolore cupiditate id animi
+                    possimus nostrum? Eaque sapiente nam quo nesciunt aperiam molestiae at dolor necessitatibus nulla.
+                    Perspiciatis!</p>
+            </div>
+            <div class="col-12 col-md-4">
+                <h7><a href="#"><b>Lorem, ipsum dolor sit amet consectetur adipisicing elit?</b></a></h7>
+                <br>
+                <h10><em>Artigo por: Xxxxx Xxxxx</em></h10>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam impedit dolore cupiditate id animi
+                    possimus nostrum? Eaque sapiente nam quo nesciunt aperiam molestiae at dolor necessitatibus nulla.
+                    Perspiciatis!</p>
+            </div>
+            <div class="col-12 col-md-4">
+                <h7><a href="#"><b>Lorem, ipsum dolor sit amet consectetur adipisicing elit?</b></a></h7>
+                <br>
+                <h10><em>Artigo por: Xxxxx Xxxxx</em></h10>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam impedit dolore cupiditate id animi
+                    possimus nostrum? Eaque sapiente nam quo nesciunt aperiam molestiae at dolor necessitatibus nulla.
+                    Perspiciatis!</p>
+            </div>
+        </section>
+        <section class="row sobre-editorial">
+            <div class="col-6">
+                <h5 class="titulos">Sobre</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ratione atque nisi, beatae aliquam eos
+                    sequi fuga accusantium iste ipsa ea nihil facilis! Fuga dolor rerum provident? Sed perferendis,
+                    doloremque non perspiciatis fuga expedita delectus ut totam corporis id officia recusandae adipisci
+                    sint itaque consequuntur, accusamus libero. Ipsa suscipit repudiandae animi, deserunt maxime iste
+                    assumenda, labore corporis, consectetur ratione quidem.</p>
+            </div>
+            <div class="col-6">
+                <h5 class="titulos">Editorial</h5>
+                <p><b>Redação: </b>Xxxx Xxxxxxxx<br>
+                    <b>Pesquisa: </b>Xxxx Xxxxx Xxxxxx<br>
+                    <b>Gerente Geral: </b>Xxx Xxxxx
+                </p>
+                <p>Uma iniciativa de Amantes de Filmes. Todos os direitos reservados ©</p>
+            </div>
+
+        </section>
+        <section class="row contact-section">
+            <h9 class="col-12 titulos">P/ dúvidas e sugestões</h9>
+            <div class="col-12 contact-links">
+                <a href="https://facebook.com/" target="_blank" class="btn contact-details"><i
+                        class="fab fa-facebook-square"></i> Facebook</a>
+                <a id="profile-link" href="https://instagram.com" target="_blank" class="btn contact-details"><i
+                        class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://twitter.com/" target="_blank" class="btn contact-details"><i
+                        class="fab fa-twitter"></i> Twitter</a>
+                <a href="mailto:exemplo@pucminas.br" class="btn contact-details"><i class="fas fa-at"></i> E-mail</a>
+                <a href="tel:+55 (31) 99999-9999" class="btn contact-details"><i class="fas fa-mobile-alt"></i>
+                    Telefone</a>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <p>
+            Copyright 2021 - Disciplina de Desenvolvimento Web - ICEI Puc Minas
+        </p>
+
+
+        <img src="imags/img1.png" class="logo">
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
